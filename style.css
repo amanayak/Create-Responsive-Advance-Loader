@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.loader {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    margin: 20% auto;
+    border-radius: 50px;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.loader .loads {
+    width: 250px;
+    height: 100px;
+    background-image: linear-gradient(to right, #1e1c1c, #02dffc);
+    margin-right: 2px;
+    border-radius: 50px;
+}
+
+@keyframes anim {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scaleY(0.4);
+        opacity: 0;
+    }
+}
+
+.loads:nth-child(1) {
+    animation: anim 2s -.7s infinite;
+}
+
+.loads:nth-child(2) {
+    animation: anim 2s -.6s infinite;
+}
+
+.loads:nth-child(3) {
+    animation: anim 2s -.5s infinite;
+}
+
+.loads:nth-child(4) {
+    animation: anim 2s -.4s infinite;
+}
+
+.loads:nth-child(5) {
+    animation: anim 2s -.3s infinite;
+}
+
+.loads:nth-child(6) {
+    animation: anim 2s -.2s infinite;
+}
+
+.loads:nth-child(7) {
+    animation: anim 2s -.1s infinite;
+}
